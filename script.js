@@ -49,7 +49,7 @@ const changeLocationButton = document.querySelector("button");
 changeLocationButton.addEventListener("click", getWeatherInfo)
 
 
-const apiKey = "2d60b63bb7146e2db3ed65250de0e256";
+const apiKey = "";
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 let url;
 
