@@ -1,0 +1,177 @@
+
+body{
+    display: flex;
+    background: linear-gradient(101.9deg, rgb(197, 120, 234) 1.6%, rgb(120, 220, 234) 51.2%, rgb(119, 249, 176) 99.8%);
+    flex-direction: column;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#title{ 
+    font-size: 9vh;
+    text-shadow: 3px 3px 2px rgb(149, 30, 173);
+}
+
+#container{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.inner{
+    width: 33%;
+    height: 100%;
+    padding-left: 30px;
+    border-radius: 40px;
+}
+
+.main{
+    background-image: url("sky.jpg");
+    background-image: linear-gradient(rgba(143, 102, 102, 0.11), rgba(190, 146, 146, 0.5)), url("sky.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+#date{
+    position: absolute;
+    top: 11%;
+}
+
+#place{
+    position: absolute;
+    top: 16%;
+}
+
+i{
+    margin-right:8px;
+}
+
+#temp{
+    position: absolute;
+    top: 70%;
+}
+
+#description{
+    position: absolute;
+    top: 78%;
+}
+
+#icon{
+    background-color: rgba(129, 200, 221, 0.555) ;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 45%;
+    border-radius: 30px;
+}
+
+.details{
+    background: linear-gradient(69.9deg, rgb(76, 79, 106) 3.2%, rgb(118, 124, 163) 97.6%);
+    width: 40%;
+    color: #eaf6f6;
+    padding: 0;
+}
+
+.details h1{
+    margin-left: 30px;
+}
+
+.values{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+.values h2{
+    background: linear-gradient(180.2deg, rgb(120, 85, 137) -6.9%, rgb(35, 9, 31) 76.7%);
+    border: 1px solid rgb(24, 4, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 30%;
+    height: 10%;
+    border-radius: 20px;
+    margin: 10px; 
+}
+
+button{
+    padding: 15px;
+    margin: 20px;
+    font-size: 18px;
+    background: #47175c;
+    color: white;
+    border: 2px solid #b144df;
+    border-radius: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #b144df;
+    border: 2px solid #b144df;
+}
+
+input{
+    font-size: 18px;
+    padding: 5px;
+    width: 40%;
+    background-color: #c5b0ce;
+    border-radius: 7px;
+}
+
+.forecast{ 
+    background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%);
+    width: 40%;
+    color: #eaf6f6;
+    padding-bottom: 10px;
+}
+
+.items{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    row-gap: 5%;    
+}
+
+.forecastItem{
+    width: 40%;
+    height: 48%;
+    background: linear-gradient(179.2deg, rgb(34, 34, 34) 0%, rgb(8, 0, 153) 29.7%, rgb(118, 6, 166) 63.4%, rgba(233, 0, 64, 0.58) 100.1%);
+    border: 1px solid rgb(44, 8, 73);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 1px 4px 15px 3px #c58ce6;
+}
+
+.forecastItem h2, h3{
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+.iconMini{
+    border-radius: 20px;
+    width: 70%;
+    height: 80%;
+}
+
+@media (min-width: 500px){
+    body{
+        background-color: #47175c;
+    }
+}
